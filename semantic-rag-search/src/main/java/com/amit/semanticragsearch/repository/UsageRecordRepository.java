@@ -9,4 +9,4 @@ import java.util.UUID;
 
 public interface UsageRecordRepository extends JpaRepository<UsageRecord, UUID> {
     List<UsageRecord> findByTenantIdAndCreatedAtBetween(UUID tenantId, OffsetDateTime start, OffsetDateTime end);
-}  
+}
